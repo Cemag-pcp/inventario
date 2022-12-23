@@ -1,0 +1,48 @@
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        {{ filter.form.as_p }}
+        <button type="submit">Search</button>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Peças</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <tr>
+                            <th>Id</th>
+                            <th>Código</th>
+                            <th>Descrição</th>
+                            <th>Família</th>
+                            <th>Quantidade</th>
+                            <th>Editar</th>                                        
+                        </tr>
+                        {% for user in filter.qs %}
+                        <tr>
+                            <td>{{user.id}}</td>
+                            <td>{{user.codigo}}</td>
+                            <td>{{user.descricao}}</td>
+                            <td>{{user.familia}}</td>
+                            <td>{{user.qt}}</td>
+                            <td><a href="/edit/{{user.id}}">Edit</a></td>
+                        </tr>
+                        {% endfor %}                                     
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
