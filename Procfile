@@ -1,1 +1,1 @@
-web: gunicorn Inventario.wsgi  --log-file -
+web: gunicorn Progressao.wsgi  --log-file -
