@@ -5,14 +5,14 @@ from paginas.models import tb_balanco
 from paginas.forms import empforms
 from django.contrib import messages
 from .filters import UserFilter
-from django.views.generic import ListView
+#from django.views.generic import ListView
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
-class LayoutView(TemplateView):
-    template_name = 'layout.html'
+#class LayoutView(TemplateView):
+#    template_name = 'layout.html'
 
 def displaydata(request):
     results=tb_balanco.objects.all()
