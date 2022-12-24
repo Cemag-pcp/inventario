@@ -1,4 +1,4 @@
-#from django.views.generic import TemplateView
+from django.views.generic import TemplateView
 from .models import tb_balanco
 from django.shortcuts import render
 from paginas.models import tb_balanco
@@ -11,8 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
-#class TablesView(TemplateView):
-#    template_name = 'tables.html'
+#class TableView(TemplateView):
+#    template_name = 'tables1.html'
 
 def displaydata(request):
     results=tb_balanco.objects.all()
