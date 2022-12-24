@@ -11,8 +11,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
-#class TableView(TemplateView):
-#    template_name = 'tables1.html'
+class LayoutView(TemplateView):
+    template_name = 'layout.html'
 
 def displaydata(request):
     results=tb_balanco.objects.all()
