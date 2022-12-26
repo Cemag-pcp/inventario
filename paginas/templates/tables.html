@@ -20,7 +20,7 @@
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" method = "post">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Procurar por..." aria-label="Procurar for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
@@ -119,8 +119,8 @@
                                 Página para registro de contagem do balanço.                               
                             </div>
                         
+                            <div class="card-body">   
 
-                            <div class="card-body">
                             <form method="get">
                                 {{ filter.form.as_p }}
                                 <button type="submit">Search</button>
@@ -137,7 +137,6 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <tr>
                                         <th>Código</th>
-                                        <th>Descrição</th>
                                         <th>Lista</th>
                                         <th>Qt.</th>
                                         <th>Editar</th>                                        
@@ -145,7 +144,6 @@
                                     {% for user in filter.qs %}
                                     <tr>
                                         <td>{{user.codigo}}</td>
-                                        <td>{{user.descricao}}</td>
                                         <td>{{user.familia}}</td>
                                         <td>{{user.qt}}</td>
                                         <td><a href="/edit/{{user.id}}">Editar</a></td>

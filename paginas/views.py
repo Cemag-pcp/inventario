@@ -2,7 +2,7 @@ from django.views.generic import TemplateView
 from .models import tb_balanco
 from django.shortcuts import render
 from paginas.models import tb_balanco
-from paginas.forms import empforms
+from paginas.forms import empforms, InputForm
 from django.contrib import messages
 from .filters import UserFilter
 #from django.views.generic import ListView
@@ -14,6 +14,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #class LayoutView(TemplateView):
 #    template_name = 'layout.html'
 
+# Create your views here.
 def displaydata(request):
     results=tb_balanco.objects.all()
     return render(request,"tables.html", {'tb_balanco':results})
