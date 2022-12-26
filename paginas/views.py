@@ -1,13 +1,11 @@
-from django.views.generic import TemplateView
+#from django.views.generic import TemplateView
 from .models import tb_balanco
 from django.shortcuts import render
 from paginas.models import tb_balanco
-from paginas.forms import empforms, InputForm
+from paginas.forms import empforms
 from django.contrib import messages
 from .filters import UserFilter
 #from django.views.generic import ListView
-from django.contrib.auth.models import User
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
