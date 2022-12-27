@@ -5,5 +5,3 @@ class empforms(forms.ModelForm):
     class Meta:
         model=tb_balanco
         fields="__all__"
-        required = (
-            'familia')
