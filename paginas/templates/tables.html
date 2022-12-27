@@ -114,17 +114,22 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Visão geral</h1>
                         <div class="card mb-4">
-
+                            <center>
                             <div class="card-body">
                                 Página para registro de contagem do balanço.                               
                             </div>
                         
                             <div class="card-body">   
-                                
+                            
                             <form method="get">
-                                {{ filter.form.as_p }}
-                                <button type="submit">Search</button>
+                                <table>
+                                    {{ filter.form.as_table }}
+                                </table>
+                                <br>
+                                
+                                    <button type="submit">Search</button>
                             </form>
+                            </center>
                             
                         </div>
 
