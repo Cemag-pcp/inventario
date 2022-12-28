@@ -144,19 +144,19 @@
                                 Tabela Geral
                             </div>
                             <div class="card-body">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table" id="dataTable">
                                     <tr>
-                                        <th>Código</th>
-                                        <th>Lista</th>
-                                        <th>Qt.</th>
-                                        <th>Editar</th>                                        
+                                        <th style="text-align: center; width: 5px;">Código</th>
+                                        <th style="text-align: center; width: 5px;">Lista</th>
+                                        <th style="text-align: center; width: 5px;">Qt.</th>
+                                        <th style="text-align: center; width: 5px;">Editar</th>                                        
                                     </tr>
                                     {% for user in filter.qs %}
                                     <tr>
-                                        <td>{{user.codigo}}</td>
-                                        <td>{{user.familia}}</td>
-                                        <td>{{user.qt}}</td>
-                                        <td><a href="/edit/{{user.id}}">Editar</a></td>
+                                        <td style="text-align: center; width: 5px;">{{user.codigo}}</td>
+                                        <td style="text-align: center; width: 5px;">{{user.familia}}</td>
+                                        <td style="text-align: center; width: 5px;">{{user.qt}}</td>
+                                        <td style="text-align: center; width: 5px;"><a href="/edit/{{user.id}}">Editar</a></td>
                                     </tr>
                                     {% endfor %}                                     
                                 </table>

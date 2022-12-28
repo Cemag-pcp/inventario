@@ -304,6 +304,7 @@ svg {
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  text-align: center;
 }
 
 caption {
@@ -327,6 +328,7 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+  text-align: center;
 }
 
 label {
@@ -11626,6 +11628,7 @@ body {
 .dataTable-table > thead > tr > th {
   vertical-align: top;
   padding: 0.5rem 0.5rem;
+  text-align: center;
 }
 
 .dataTable-table > thead > tr > th {
