@@ -123,11 +123,16 @@
                             
                             <form method="get">
                                 <table>
-                                    {{ filter.form.as_table }}
+                                    <label for="codigo">Código: </label>
+                                    <br>
+                                    <input id="codigo" type="text" name="codigo"/>
+                                    <br>
+                                    <label for="familia">Lista: </label>
+                                    <br>
+                                    <input id="familia" type="text" name="familia" required=True value=""/>
                                 </table>
                                 <br>
-                                
-                                    <button type="submit">Search</button>
+                                <button type="submit">Search</button>
                             </form>
                             </center>
                             

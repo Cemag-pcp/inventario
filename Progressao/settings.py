@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'Progressao.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER':'postgres',
-        'PASSWORD': '15512332',
-        'HOST': 'localhost',
+        'NAME': 'dcshbua3ds6o26',
+        'USER':'dnszuhssidylhl',
+        'PASSWORD': 'dba260779d55613911bea5de8450b21f359c4192261c7805b7e4dc1dfab0c281',
+        'HOST': 'ec2-52-3-60-53.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
